@@ -15,7 +15,7 @@ const VideoReviews = () => {
       <div className="flex justify-center">
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-xl md:text-2xl font-bold text-primary">
-            কাস্টমারদের ভিডিও বার্তা
+            দেখুন গ্রাহকরা কি বলছেন
           </h1>
           <div className="flex items-center gap-1">
             <div className="w-20 h-1 bg-primary"></div>

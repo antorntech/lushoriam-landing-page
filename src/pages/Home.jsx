@@ -7,6 +7,7 @@ import Reviews from "../components/ui/reviews/Reviews";
 import OrderNow from "../components/ui/ordernow/OrderNow";
 import Footer from "../components/shared/Footer";
 import Hero from "../components/slider/Hero";
+import VideoReviews from "../components/videoreview/VideoRiviews";
 
 function Home() {
   return (
@@ -16,7 +17,8 @@ function Home() {
         <Hero />
         <Faq />
         <Products />
-        <Reviews />
+        <VideoReviews />
+        {/* <Reviews /> */}
         <div id="order-now">
           <OrderNow />
         </div>
