@@ -276,51 +276,53 @@ const OrderNow = () => {
         </div>
 
         <div>
-          <div className="flex items-center space-x-4 mb-4">
-            <img
-              src={productImage}
-              alt={productName}
-              className="w-24 h-24 object-cover rounded"
-            />
-            <div className="spayce-y-2 md:space-y-4">
-              <h3 className="text-lg font-semibold capitalize">
-                {productName}
-              </h3>
-              <div className="flex items-center space-x-2 mt-2">
-                <button
-                  type="button"
-                  onClick={decreaseQuantity}
-                  className="px-3 py-1 bg-red-500 text-white rounded"
-                >
-                  -
-                </button>
-                <span className="text-lg font-bold">{quantity}</span>
-                <button
-                  type="button"
-                  onClick={increaseQuantity}
-                  className="px-3 py-1 bg-green-500 text-white rounded"
-                >
-                  +
-                </button>
+          <div className="border-2 border-cyan-500 p-3 rounded-md">
+            <div className="flex items-center space-x-4 mb-4">
+              <img
+                src={productImage}
+                alt={productName}
+                className="w-24 h-24 object-cover rounded"
+              />
+              <div className="spayce-y-2 md:space-y-4">
+                <h3 className="text-lg font-semibold capitalize">
+                  {productName}
+                </h3>
+                <div className="flex items-center space-x-2 mt-2">
+                  <button
+                    type="button"
+                    onClick={decreaseQuantity}
+                    className="px-3 py-1 bg-red-500 text-white rounded"
+                  >
+                    -
+                  </button>
+                  <span className="text-lg font-bold">{quantity}</span>
+                  <button
+                    type="button"
+                    onClick={increaseQuantity}
+                    className="px-3 py-1 bg-green-500 text-white rounded"
+                  >
+                    +
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-lg font-semibold my-5">
-                Total: {totalAmount} TK
-              </p>
-            </div>
-            <div className="text-lg font-semibold my-5">
-              {activeProduct?.quantity > 0 ? (
-                <span className="bg-green-500 text-white rounded px-2 py-1">
-                  In stock
-                </span>
-              ) : (
-                <span className="bg-red-500 text-white rounded px-2 py-1">
-                  Out of stock
-                </span>
-              )}
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-lg font-semibold my-5 bg-cyan-500 px-4 py-2 rounded-md text-white">
+                  Total: {totalAmount} TK
+                </p>
+              </div>
+              <div className="text-lg font-semibold my-5">
+                {activeProduct?.quantity > 0 ? (
+                  <span className="bg-green-500 text-white rounded px-2 py-1">
+                    In stock
+                  </span>
+                ) : (
+                  <span className="bg-red-500 text-white rounded px-2 py-1">
+                    Out of stock
+                  </span>
+                )}
+              </div>
             </div>
           </div>
           <div className="mb-5 p-2 md:p-4 bg-primary/10 rounded">
