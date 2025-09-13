@@ -276,7 +276,7 @@ const OrderNow = () => {
         </div>
 
         <div>
-          <div className="border-2 border-cyan-500 p-3 rounded-md">
+          <div className="border-2 border-cyan-500 p-3 rounded-md mb-4">
             <div className="flex items-center space-x-4 mb-4">
               <img
                 src={productImage}
