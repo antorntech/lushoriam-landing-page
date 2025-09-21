@@ -79,4 +79,18 @@ body {
   .heartbeat {
     animation: heartbeat 1.5s infinite;
   }
+
+  @keyframes pulse-scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  .animate-pulse-scale {
+    animation: pulse-scale 1.5s infinite ease-in-out;
+  }
 }
